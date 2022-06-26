@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+p {
+  margin: 0;
+}
+
+.site-header .top-bar {
+  padding: 6px 8%;
+  background-color: #ff4000;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.site-header .top-bar .contact-info p {
+  text-transform: uppercase;
+  color: #7a1f00;
+  font-weight: bold;
+}
+.site-header .top-bar .contact-info p a {
+  color: #ffffff;
+}
+.site-header .top-bar .user-login {
+  text-align: right;
+}
+.site-header .top-bar .user-login p {
+  font-weight: bold;
+}
+.site-header .top-bar .user-login p span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.site-header .top-bar .user-login p span.login {
+  color: #7a1f00;
+}
+.site-header .main-header {
+  background-color: #ebebeb;
+  display: grid;
+  grid-template-columns: 200px auto;
+  padding: 35px 8% 26px;
+}
+.site-header .main-header #menu-toggle {
+  display: none;
+}
+.site-header .main-header .main-navigation {
+  text-align: right;
+}
+.site-header .main-header .main-navigation .menu {
+  display: inline-block;
+}
+.site-header .main-header .main-navigation .menu li {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.site-header .main-header .main-navigation .menu li:hover, .site-header .main-header .main-navigation .menu li:focus {
+  border-bottom: 3px solid #ff4000;
+  font-weight: bold;
+}
+.site-header .main-header .main-navigation .menu li a {
+  padding: 12px 20px;
+  color: #222222;
+}
+.site-header .main-header .main-navigation .menu li .sub-menu {
+  background-color: #ffffff;
+}
+.site-header .main-header .main-navigation .menu li .sub-menu li {
+  padding: 0;
+}
+.site-header .main-header .main-navigation .menu li .sub-menu li:hover, .site-header .main-header .main-navigation .menu li .sub-menu li:focus {
+  background-color: #ebebeb;
+}
+.site-header .main-header .main-navigation .menu li .sub-menu li a {
+  padding: 12px 20px;
+  width: max-content;
+}
+
+.home-contact {
+  padding: 35px 8% 26px;
+}
+.home-contact .section-heading h2 {
+  color: #ff4000;
+}
+.home-contact .section-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px 0;
+}
+.home-contact .section-body .block-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ff4000;
+  border-bottom: 5px solid #222222;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.home-contact .section-body .contact-form {
+  padding-right: 50px;
+}
+.home-contact .section-body .contact-form form p:nth-child(3),
+.home-contact .section-body .contact-form form p:nth-child(4) {
+  display: inline-block;
+  width: 49%;
+}
+.home-contact .section-body .contact-form form p {
+  margin: 8px 0;
+}
+.home-contact .section-body .contact-form form p input, .home-contact .section-body .contact-form form p textarea {
+  background-color: #ebebeb;
+  border: 1px solid #cccccc;
+  padding: 5px 8px;
+  width: 100%;
+}
+.home-contact .section-body .contact-form form p input[type=submit], .home-contact .section-body .contact-form form p textarea[type=submit] {
+  width: auto;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  border: none;
+  margin-top: 25px;
+  background-color: #ff4000;
+  color: #ffffff;
+  cursor: pointer;
+}
+.home-contact .section-body .contact-form form p input.email-address, .home-contact .section-body .contact-form form p textarea.email-address {
+  margin-left: 8px;
+}
+.home-contact .section-body .contact-detail {
+  padding-left: 50px;
+}
+.home-contact .section-body .contact-detail .address .company {
+  font-size: 1.1em;
+}
+.home-contact .section-body .contact-detail .address .street {
+  width: 200px;
+}
+.home-contact .section-body .contact-detail .contact {
+  padding: 20px 0;
+}
+.home-contact .section-body .contact-detail .social-links {
+  padding-top: 40px;
+}
+.home-contact .section-body .contact-detail .social-links ul {
+  list-style-type: none;
+  margin: 0;
+}
+.home-contact .section-body .contact-detail .social-links ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.home-contact .section-body .contact-detail .social-links ul li i {
+  font-size: 20px;
+}
+.home-contact .section-body .contact-detail .social-links ul li:hover i {
+  color: #ff4000;
+}
+
+.site-footer {
+  padding: 35px 8% 26px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */

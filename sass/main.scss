@@ -1,0 +1,228 @@
+// IMPORTS
+@import 'base/variables';  // Variables
+
+// GENERIC
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+p {
+    margin: 0;
+}
+
+// HEADER
+.site-header {
+    .top-bar {
+        padding: 6px 8%;
+        background-color: $primary;
+        color: $white;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .contact-info {
+            p {
+                text-transform: uppercase;
+                color: $secondary;
+                font-weight: bold;
+
+                a {
+                    color: $white;
+                }
+            }
+        }
+
+        .user-login {
+            text-align: right;
+            
+            p {
+                font-weight: bold;
+                span {
+                    margin: 0 5px;
+                    cursor: pointer;
+
+                    &.login {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-header {
+        background-color: $gray;
+        display: grid;
+        grid-template-columns: 200px auto;
+        padding: 35px 8% 26px;
+
+        #menu-toggle {
+            display: none;
+        }
+
+        .main-navigation {
+            text-align: right;
+
+            .menu {
+                display: inline-block;
+
+                li {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+
+                    &:hover,
+                    &:focus {
+                        border-bottom: 3px solid $primary;
+                        font-weight: bold;
+                    }
+
+                    a {
+                        padding: 12px 20px;
+                        color: $black;
+                    }
+
+                    .sub-menu {
+                        background-color: $white;
+
+                        li {
+                            padding: 0;
+                            
+                            &:hover,
+                            &:focus {
+                                background-color: $gray;
+                            }
+
+                            a {
+                                padding: 12px 20px;
+                                width: max-content;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// HOME CONTACT SECTION
+.home-contact {
+    padding: 35px 8% 26px;
+
+    .section-heading {
+        h2 {
+            color: $primary;
+        }
+    }
+
+    .section-body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 40px 0;
+
+        .block-heading {
+            text-transform: uppercase;
+            font-weight: 400;
+            color: $primary;
+            border-bottom: 5px solid $black;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            padding-right: 50px;
+
+            form {
+                p:nth-child(3),
+                p:nth-child(4) {
+                    display: inline-block;
+                    width: 49%;
+                }
+
+                p {
+                    margin: 8px 0;
+
+                    input, textarea {
+                        background-color: $gray;
+                        border: 1px solid #cccccc;
+                        padding: 5px 8px;
+                        width: 100%;
+
+                        &[type="submit"] {
+                            width: auto;
+                            text-transform: uppercase;
+                            padding: 10px 25px;
+                            font-size: 15px;
+                            letter-spacing: 1px;
+                            border: none;
+                            margin-top: 25px;
+                            background-color: $primary;
+                            color: $white;
+                            cursor: pointer;
+                        }
+
+                        &.email-address {
+                            margin-left: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-detail {
+            padding-left: 50px;
+
+            .address {
+                .company {
+                    font-size: 1.1em;
+                }
+
+                .street {
+                    width: 200px;
+                }
+            }
+
+            .contact {
+                padding: 20px 0;
+            }
+
+            .social-links {
+                padding-top: 40px;
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        display: inline-block;
+                        margin: 0 8px;
+
+                        i {
+                            font-size: 20px;
+                        }
+
+                        &:hover i {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// FOOTER
+.site-footer {
+    padding: 35px 8% 26px;
+    text-align: center;
+}
